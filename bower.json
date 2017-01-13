@@ -1,0 +1,20 @@
+{
+  "name": "eden",
+  "description": "react",
+  "main": "index.js",
+  "authors": [
+    "essxiv"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "react"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
