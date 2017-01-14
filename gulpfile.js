@@ -11,9 +11,10 @@ var source = require('vinyl-source-stream')
 var babelify = require('babelify')
 var watchify = require('watchify')
 var uglify = require('gulp-uglify')
+var browserify = require('browserify')
 var sourcemaps = require('gulp-sourcemaps')
 
-var production = process.end.NODE_ENV === 'production'
+var production = process.env.NODE_ENV === 'production'
 
 var dependencies = [
     'alt',
@@ -94,4 +95,4 @@ gulp.task('watch', function() {
 })
 
 gulp.task('default', ['styles', 'vendor', 'browsify-watch', 'watch'])
-gulp.task('build' ['styles', 'vendor', 'browserify'])
+gulp.task('build', ['styles', 'vendor', 'browserify'])
